@@ -1,13 +1,21 @@
 .header {
     grid-area: header;
 
-    &__inner {
-        height: 110px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 576px) {
+        gap: 20px;
     }
 
     &__home-link {
+        @media (max-width: 576px) {
+            padding: 15px !important;
+            .btn__text {
+                display: none;
+            }
+        }
     }
 }

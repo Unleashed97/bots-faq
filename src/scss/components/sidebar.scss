@@ -1,6 +1,10 @@
 .sidebar {
     grid-area: sidebar;
 
+    // @media (max-width: 768px) {
+    //     position: absolute;
+    // }
+
     &__image {
         display: block;
         margin: 0 auto;

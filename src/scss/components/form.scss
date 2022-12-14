@@ -12,6 +12,10 @@
 
         border: 2px solid #478dd5;
         border-radius: 10px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
 
     &__btn {

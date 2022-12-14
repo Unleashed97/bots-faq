@@ -53,6 +53,15 @@ p {
         'sidebar main';
     grid-template-columns: 297px 1fr;
     gap: 32px 27px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header'
+            'sidebar'
+            'main';
+        gap: 20px;
+    }
 }
 
 // components
@@ -64,3 +73,4 @@ p {
 @import 'components/nav.scss';
 @import 'components/btn.scss';
 @import 'components/form.scss';
+@import 'components/burger.scss';

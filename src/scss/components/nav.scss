@@ -1,17 +1,19 @@
 .nav {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+
     &__list {
+        display: none;
         &--menu {
+            display: block;
             .nav__item-caption {
                 background-color: #478dd5;
                 color: #fff;
-
-                // &:first-child {
-                //     border-radius: 10px 10px 0 0;
-                // }
             }
         }
 
         &--submenu1 {
+            display: none;
             .nav__item-caption {
                 padding-left: 50px;
 
@@ -21,6 +23,7 @@
             }
         }
         &--submenu2 {
+            display: none;
             .nav__item-caption {
                 padding-left: 78px;
 
@@ -30,6 +33,7 @@
             }
         }
         &--submenu3 {
+            display: none;
             .nav__item-caption {
                 padding-left: 78px;
 
@@ -40,23 +44,42 @@
         }
 
         &--plain {
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
+            display: none;
         }
     }
 
     &__item {
+        &.active {
+            & > .nav__item-icon {
+                transform: rotate(180deg);
+            }
+
+            & > .nav__list {
+                display: block;
+
+                color: yellow;
+            }
+        }
+    }
+
+    &__item:first-child .nav__item-caption {
+        border-radius: 0;
     }
 
     &__item-el {
         width: 100%;
         min-height: 45px;
 
+        margin-bottom: 2px;
+
         padding: 14px 11px 14px 105px;
         background-color: rgba(#478dd5, 0.1);
 
         color: #3e526a;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &__item-caption {
@@ -71,5 +94,9 @@
         color: #3e526a;
 
         border-radius: 0;
+    }
+
+    &__item-icon {
+        transition: 0.3s linear;
     }
 }
