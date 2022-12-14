@@ -43,6 +43,20 @@ p {
     margin: 0;
 }
 
+// wrapper
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'sidebar main';
+    grid-template-columns: 297px 1fr;
+    gap: 32px 27px;
+}
+
 // components
 @import 'components/header.scss';
 @import 'components/footer.scss';
+@import 'components/container.scss';
+@import 'components/main.scss';
+@import 'components/sidebar.scss';
+@import 'components/nav.scss';
