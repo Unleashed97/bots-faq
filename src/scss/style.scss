@@ -45,6 +45,8 @@ p {
 
 // wrapper
 .wrapper {
+    margin-bottom: 50px;
+
     display: grid;
     grid-template-areas:
         'header header'
@@ -60,3 +62,5 @@ p {
 @import 'components/main.scss';
 @import 'components/sidebar.scss';
 @import 'components/nav.scss';
+@import 'components/btn.scss';
+@import 'components/form.scss';

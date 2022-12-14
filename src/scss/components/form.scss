@@ -1,0 +1,28 @@
+.form {
+    position: relative;
+
+    &__input {
+        width: 495px;
+        height: 45px;
+
+        padding: 5px 65px 5px 10px;
+
+        font-family: $family;
+        font-size: 1.4rem;
+
+        border: 2px solid #478dd5;
+        border-radius: 10px;
+    }
+
+    &__btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        padding: 0;
+        width: 55px;
+        height: 45px;
+
+        border-radius: 0 10px 10px 0;
+    }
+}

@@ -1,6 +1,13 @@
 .header {
     grid-area: header;
-    height: 80px;
 
-    background-color: tomato;
+    &__inner {
+        height: 110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__home-link {
+    }
 }
