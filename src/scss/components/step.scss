@@ -1,0 +1,54 @@
+.step {
+    position: relative;
+    padding-left: 60px;
+
+    @media (max-width: $sm) {
+        padding-left: 40px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 41px;
+        height: 41px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #fff;
+
+        background-color: #478dd5;
+        border-radius: 50%;
+
+        @media (max-width: $sm) {
+            width: 30px;
+            height: 30px;
+
+            font-size: 18px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 19px;
+        color: #434445;
+    }
+
+    &__desk {
+        margin-bottom: 25px;
+
+        color: rgba(#000000, 0.75);
+    }
+
+    &__image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+        border-radius: 10px;
+    }
+}

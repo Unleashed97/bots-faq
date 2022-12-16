@@ -1,0 +1,27 @@
+.breadcrumbs {
+    margin-bottom: 77px;
+
+    background-color: #f6fbff;
+    border-radius: 10px;
+
+    @media (max-width: $md) {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 0;
+    }
+
+    &__item {
+        color: #434445;
+    }
+
+    &__item + &__item::before {
+        content: '/\00a0';
+        padding: 8px;
+        color: #434445;
+    }
+}

@@ -2,4 +2,17 @@
     grid-area: main;
 
     min-height: 100vh;
+
+    &__content {
+        padding: 36px 84px;
+        background-color: #f9fcff;
+        border-radius: 10px;
+
+        @media (max-width: $lg) {
+            padding: 36px;
+        }
+        @media (max-width: $md) {
+            padding: 0;
+        }
+    }
 }
